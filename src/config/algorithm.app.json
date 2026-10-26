@@ -1,0 +1,20 @@
+{
+  "_doc": "App-only settings layered over algorithm.default.json (copied unchanged from learnspace-sim v1.0). Keys starting with '_' are documentation. Only keys listed here differ from the simulation.",
+  "bandit": {
+    "ts_mode": "probs",
+    "_ts_mode": "The app must log propensities, so it uses Monte Carlo probsTS (LEARNSPACE_RESEARCH_UPDATE.md section 3)."
+  },
+  "app": {
+    "difficulty_rule": "DDA-E",
+    "_difficulty_rule": "'DDA-E' (paper Eq. 4, default) or 'STATIC' (D = D_base(s)). Section 7.",
+    "planned_tasks": 12,
+    "_planned_tasks": "Tasks per session, as in pit-study (N_QUESTIONS = 12). Decided by Robert, 2026-10-23.",
+    "sessions": 20,
+    "_sessions": "Number of planned sessions S: D_base rises from 2 to 4 over S sessions. 20 for the current tests (Robert, 2026-10-23); the full curriculum has hundreds.",
+    "correct_min_score": 2,
+    "_correct_min_score": "A graded answer counts as correct at score >= this value on the grader's 0-3 scale.",
+    "core_commit": "05f70f7",
+    "consent_version": "v1-draft",
+    "_consent_version": "Version of the consent and assent text in app/consent.tsx. Bump it when the text changes: every learner is asked again."
+  }
+}

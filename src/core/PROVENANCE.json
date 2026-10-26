@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/robertbrezoaie/learnspace-sim",
+  "tag": "v1.0",
+  "commit": "05f70f7220759d03b6c3dc9ac338fc575da03ba2",
+  "files": {
+    "types.ts": "a3c50e9724745347f76aceacb8bdf5fe05dc862cbdb98c406b50cd8f50e7acdd",
+    "signals.ts": "9da1aae79d040748a7951c1faf1fab58ea61ca06be6b005a4677386bb15d4e00",
+    "gamification.ts": "2c3385265d05219e607b4888c2559ea891b989d5564087b8ba9fb2a9b5fd2d34",
+    "reward.ts": "46ea8faaf94282f9e630d6d5dc6abc92fa5737c07f03a6150a2cccdffac0d5d8",
+    "difficulty.ts": "a9c9b81f749641fa4c993cc640c7ff5b3c6761417469fe4f280778f72b0141bb",
+    "explain.ts": "c3a404736761b6668d9c0b801fad7fa8c61b1b0c44648ebf4f6f1c4a95c94e62",
+    "templates.ts": "080b5dbd2d7cfb536c2007106b1f2a8cef596a2b83145bd478bf24dbec25f0ed",
+    "bandit/beta.ts": "04af3c173e7f46c57eeb5c3924750f3e959ee2302c33081c2f4f43bb40821993",
+    "bandit/allocator.ts": "4ee9745334bc5d2c55a652b904e14a0b47ee912dcd029d5feffbba9761295590",
+    "bandit/thompson.ts": "dbaf9a9b339c77e135b29a5accf333b0a453bad4848bb1fe05efe54af4eaa422"
+  }
+}

@@ -1,0 +1,1736 @@
+[
+  {
+    "id": "ALG-W1",
+    "domain": "algorithms",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Complete the sentence: “If it is raining outside, then I take ___ with me.” What goes in the blank?",
+    "reference_answer_ro": "An umbrella (or a raincoat, a rain cape, a hood). It is an “if… then…” rule: if the condition is true (it is raining), I do the action (I take the umbrella).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "An answer about the weather that does not protect from rain (for example “sunglasses”).",
+      "2": "Something that protects you from rain (umbrella, raincoat, rain cape, hood, rain boots).",
+      "3": "A suitable item and a remark about the rule (for example that it is an “if… then…” condition, or what you do “otherwise”, when it is not raining)."
+    },
+    "misconceptions": [
+      {
+        "tag": "condition_action_mixup",
+        "description": "Mixes up the condition (it is raining) and the action (I take the umbrella)."
+      },
+      {
+        "tag": "any_object",
+        "description": "Names any object, unrelated to the condition."
+      }
+    ],
+    "explanation_ro": "The right answer is an umbrella, or anything that protects you from rain. This is exactly how an “if” works in programming: first a condition is checked (is it raining?), then the action happens only if the condition is true. A robot does the same: “If there is an obstacle in front of me, then I stop the motors.”"
+  },
+  {
+    "id": "ALG-W2",
+    "domain": "algorithms",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "An algorithm is a list of steps, in order. Write 3 steps, in order, to make a sandwich.",
+    "reference_answer_ro": "For example: 1. Take two slices of bread. 2. Put what you like on one slice (butter, cheese, ham). 3. Put the other slice on top. The order matters.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A single very general step (“I make the sandwich”) or steps in an order that makes no sense.",
+      "2": "At least 3 steps that make sense, in a good order.",
+      "3": "Clear steps in a good order, and a remark that the order matters or an extra step of precision (for example “I wash my hands”, “I cut the bread”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "order_irrelevant",
+        "description": "Thinks the order of the steps does not matter."
+      },
+      {
+        "tag": "too_vague",
+        "description": "Writes a single very general step (“I make the sandwich”)."
+      }
+    ],
+    "explanation_ro": "You can make a sandwich like this: take two slices of bread, put what you like on one, then cover it with the other. If you change the order (put the top slice on before the filling), it goes wrong. A program is the same: the computer does the steps exactly in the order you write them."
+  },
+  {
+    "id": "ALG-E1",
+    "domain": "algorithms",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In Scratch, Roblox or another program, why do we use a “repeat” block (a loop) instead of writing the same command 20 times?",
+    "reference_answer_ro": "So that we write the command only once and it is repeated automatically: the code is shorter, easier to read and easier to change (you change just one number), and there are fewer mistakes.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says that it is “better” or “easier”, without saying why.",
+      "2": "Says that the loop repeats automatically, so we write less code or work faster.",
+      "3": "The code is shorter and, in addition, easier to change (for example you only change the number of repeats) or has fewer mistakes."
+    },
+    "misconceptions": [
+      {
+        "tag": "loop_faster_computer",
+        "description": "Thinks the loop makes the computer much faster, rather than helping us write less."
+      },
+      {
+        "tag": "loop_only_infinite",
+        "description": "Thinks every loop repeats forever."
+      }
+    ],
+    "explanation_ro": "A loop repeats the same commands for us. Instead of 20 identical blocks we write one and say “repeat 20 times”. The code is shorter and easier to read, and if you want 30 repeats you change just one number."
+  },
+  {
+    "id": "ALG-E2",
+    "domain": "algorithms",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Many programs start with a “When…” block, for example “When the green flag is clicked”. Give another example of a “When…” from a game or an app and say which action it starts.",
+    "reference_answer_ro": "For example: “When I press the right arrow” → the character moves right; “When the button is pressed” → the app speaks; “When the character touches the coin” → the score goes up; “When the phone is shaken” → a prediction appears. These are called events.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only an event without an action, only an action without an event, or repeats the green-flag example.",
+      "2": "A suitable event and the action it starts.",
+      "3": "A suitable event and action, plus the idea of an “event”, or that this code waits for something to happen."
+    },
+    "misconceptions": [
+      {
+        "tag": "event_is_action",
+        "description": "Confuses the event (what happens) with the action the code performs."
+      },
+      {
+        "tag": "code_runs_always",
+        "description": "Thinks all the code runs immediately, not only when the event happens."
+      }
+    ],
+    "explanation_ro": "A “When…” is called an event: the code under it waits for something to happen and only then starts. For example: “When I press the right arrow, the character moves right” or “When the button is pressed, the phone says Hello”. Almost every game and every app works with events."
+  },
+  {
+    "id": "ALG-E3",
+    "domain": "algorithms",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is the difference between “repeat 10 times” and “forever”?",
+    "reference_answer_ro": "“Repeat 10 times” runs the commands exactly 10 times, then stops and the program goes on. “Forever” repeats them all the time and never stops by itself (until you stop the program). “Forever” is used, for example, to keep checking the keys in a game.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Correctly describes only one of the two loops.",
+      "2": "Says that the first one stops after 10 repeats and the second one does not stop.",
+      "3": "The correct difference and an example of when you use each (for example “forever” for continuous movement or for checking the keys)."
+    },
+    "misconceptions": [
+      {
+        "tag": "forever_means_long",
+        "description": "Thinks “forever” just means “very many times” and stops at some point."
+      },
+      {
+        "tag": "same_loops",
+        "description": "Thinks the two loops do the same thing."
+      }
+    ],
+    "explanation_ro": "“Repeat 10 times” counts: it does the steps 10 times, then moves on. “Forever” never stops by itself, which is why we use it when something has to be checked all the time, for example whether the player presses a key or whether the snake has touched the edge."
+  },
+  {
+    "id": "ALG-E4",
+    "domain": "algorithms",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A robot drives forward across a room. Write an “if… then…” rule that stops it from crashing into the wall.",
+    "reference_answer_ro": "If the sensor sees an obstacle (the wall) close in front, then the robot stops its motors (or turns). Otherwise, it keeps going forward.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only the action (“it stops”) without a condition, or only the condition without an action.",
+      "2": "A condition about the wall or an obstacle and a suitable action (stops, turns, reverses).",
+      "3": "A suitable condition and action, plus the “otherwise” part (keeps going forward) or how the robot finds out (a distance sensor)."
+    },
+    "misconceptions": [
+      {
+        "tag": "robot_sees_like_human",
+        "description": "Thinks the robot “sees” the wall by itself, without a sensor and without a rule."
+      },
+      {
+        "tag": "action_without_condition",
+        "description": "Writes only the action, without the condition that triggers it."
+      }
+    ],
+    "explanation_ro": "A good rule is: “If the sensor sees a wall close by, then stop the motors (or turn); otherwise go forward.” The robot does not know by itself where the wall is: it needs a sensor that measures the distance and a condition that checks what it measured."
+  },
+  {
+    "id": "ALG-E5",
+    "domain": "algorithms",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is a “bug” in a program, and what is the first thing you do when you notice one?",
+    "reference_answer_ro": "A bug is a mistake in the program that makes it not work the way we want. First you try to make it happen again and look for where it happens: run the program step by step, read the error message, check the last change. Then you fix it and test again.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only one of the two parts (the definition or a first step), or very vague (“I fix it”).",
+      "2": "Says it is a mistake in the program and gives a reasonable first step (test, look for where it happens, read the error).",
+      "3": "A correct definition, a good first step and the idea that after fixing it you test again."
+    },
+    "misconceptions": [
+      {
+        "tag": "bug_is_virus",
+        "description": "Thinks a bug is a virus that comes from outside."
+      },
+      {
+        "tag": "fix_by_restart",
+        "description": "Thinks a bug can only be fixed by restarting the computer."
+      }
+    ],
+    "explanation_ro": "A bug is a mistake in the code: the program does something other than what we wanted. Programmers hunt for it like detectives: they make it happen again, read the error message, and check step by step what the code does. After fixing it, they test again to make sure it is gone."
+  },
+  {
+    "id": "ALG-H1",
+    "domain": "algorithms",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A program should print the numbers from 1 to 100, but it only prints 1 to 99. What mistake could be in the program, and how would you fix it?",
+    "reference_answer_ro": "The loop stops too early: for example the condition is i < 100 instead of i <= 100, range(1, 100) instead of range(1, 101), or “repeat 99 times” instead of 100. You fix it by changing the limit or the comparison sign so that 100 is included too.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Vaguely says there is a mistake in the loop or in the program, without identifying it.",
+      "2": "Identifies that the limit or the condition of the loop stops too early.",
+      "3": "Identifies the limit problem and proposes a concrete fix (for example <= 100, range(1, 101) or “repeat 100 times”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "start_value_wrong",
+        "description": "Thinks the problem is the starting value of the loop."
+      },
+      {
+        "tag": "patch_not_fix",
+        "description": "Suggests printing 100 separately instead of fixing the condition."
+      }
+    ],
+    "explanation_ro": "This is a very common mistake called “off-by-one”. The loop stops before 100 because it repeats one time too few, for example because the condition is “less than 100”. If you change it to “less than or equal to 100” (or use range(1, 101) in Python), the program prints 100 as well."
+  },
+  {
+    "id": "ALG-H2",
+    "domain": "algorithms",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In Snake, the game should end when the snake touches the edge. The block “if touching edge, then Game Over” is placed only once, at the start, not inside a loop. What happens, and how do you fix it?",
+    "reference_answer_ro": "The condition is checked only once, at the start, when the snake is not touching the edge yet. After that it is never checked again, so the game does not end when the snake touches the edge. The fix: put the check inside a “forever” loop (or use “repeat until touching edge”), so that it is checked all the time.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says the game does not end, without explaining why, or proposes a fix unrelated to the check.",
+      "2": "Explains that the check happens only once (at the start), so it misses the moment of touching.",
+      "3": "Explains the problem and proposes putting the check inside a “forever” or “repeat until” loop."
+    },
+    "misconceptions": [
+      {
+        "tag": "if_waits",
+        "description": "Thinks an “if” waits by itself until it becomes true."
+      },
+      {
+        "tag": "if_checks_forever",
+        "description": "Thinks a condition written once is automatically checked all the time."
+      }
+    ],
+    "explanation_ro": "An “if” checks its condition only once, at the exact moment the program reaches it. At the start of the game the snake is not touching the edge, so the condition is false, and after that nothing checks it again. If you put it inside a “forever” loop, it is checked at every step and the game stops exactly when the snake touches the edge."
+  },
+  {
+    "id": "ALG-H3",
+    "domain": "algorithms",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "The character should say “I won!” only when the score reaches 10. But it says it right at the start of the game. What could the problem be, and how do you fix it?",
+    "reference_answer_ro": "The message is not placed under a condition (or the condition is wrong, for example “score < 10” instead of “score = 10”). The fix: “if score = 10 (or score ≥ 10), then say «I won!»”, checked inside a loop, or “wait until score = 10” and then say the message.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Vaguely says there is a problem with the score or the order, without identifying it.",
+      "2": "Identifies that the condition “if the score is 10” is missing or wrong.",
+      "3": "Identifies the problem and proposes a concrete fix (the correct condition, checked inside a loop, or “wait until score = 10”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "message_needs_no_condition",
+        "description": "Thinks the message appears by itself at the right moment, without a condition."
+      },
+      {
+        "tag": "wrong_comparison",
+        "description": "Uses a wrong comparison (for example “score < 10”)."
+      }
+    ],
+    "explanation_ro": "The computer does exactly what the code says, in order. If the block “say I won!” is not placed under a condition, it runs immediately. The solution is “wait until score = 10” or “if score = 10, then say I won!”, checked inside a loop, so that the message appears only when the player has really won."
+  },
+  {
+    "id": "ALG-H4",
+    "domain": "algorithms",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A robot has to drive forward and stop only when its sensor sees an obstacle. You do not know how far away the obstacle is. What kind of loop would you use, and why?",
+    "reference_answer_ro": "A “repeat until” loop (or “while”): “repeat move forward until the sensor sees the obstacle”, then stop. “Repeat 10 times” does not fit, because you do not know how many steps there are; “forever” on its own does not stop (unless you put an “if” inside it that stops the robot).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Chooses a loop without explaining, or chooses “repeat N times” with an idea that is only partly right.",
+      "2": "Chooses “repeat until” or “while” (or “forever” with an “if” that stops the robot) and links stopping to the sensor.",
+      "3": "The level-2 answer, and explains why “repeat 10 times” does not fit (we do not know the number of steps)."
+    },
+    "misconceptions": [
+      {
+        "tag": "fixed_count_ok",
+        "description": "Thinks a fixed number of repeats always works."
+      },
+      {
+        "tag": "forever_stops_itself",
+        "description": "Thinks the “forever” loop stops by itself when the obstacle appears."
+      }
+    ],
+    "explanation_ro": "When we do not know how many times something has to be repeated, we use “repeat until” (or “while”). The robot drives forward and checks the sensor at every step; when it sees the obstacle, the loop ends and the robot stops. “Repeat 10 times” could be too few or too many."
+  },
+  {
+    "id": "ALG-H5",
+    "domain": "algorithms",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A program has the loop “while speed > 0: move forward”, but nothing inside the loop changes the speed. The speed starts at 5. What happens?",
+    "reference_answer_ro": "The speed always stays 5, so the condition “speed > 0” is always true and the loop never ends (an infinite loop): the character or robot moves forward forever, and the program may freeze. Something inside the loop has to lower the speed, or there must be another stop condition (for example a sensor).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says it “moves forward”, without noticing that it never stops.",
+      "2": "Says the loop never stops (an infinite loop), because the speed does not change.",
+      "3": "Explains the infinite loop and proposes a fix (lower the speed inside the loop or add a stop condition)."
+    },
+    "misconceptions": [
+      {
+        "tag": "loop_counts_value",
+        "description": "Thinks the loop repeats as many times as the value of the variable (5)."
+      },
+      {
+        "tag": "condition_changes_itself",
+        "description": "Thinks a condition changes by itself, without code that changes the variable."
+      }
+    ],
+    "explanation_ro": "A “while” loop stops only when its condition becomes false. Here the speed stays 5, so “speed > 0” is always true and the loop runs forever. To make it stop, something inside the loop has to change, for example lowering the speed by 1 at every step or checking a sensor."
+  },
+  {
+    "id": "DATA-W1",
+    "domain": "data",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In a game, which number usually changes when you collect a coin or a star?",
+    "reference_answer_ro": "The score (the points, the number of coins or stars). It usually goes up by 1, or by however many points the coin is worth. This number is kept in a variable.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A vague answer (“a number”, “something changes”), without saying which.",
+      "2": "The score, the points or the number of coins/stars goes up.",
+      "3": "The score goes up, and says that it is kept in a variable or by how much it goes up."
+    },
+    "misconceptions": [
+      {
+        "tag": "score_decreases",
+        "description": "Thinks the score goes down when you collect a coin."
+      },
+      {
+        "tag": "number_is_fixed",
+        "description": "Thinks the numbers in a game cannot change while it is being played."
+      }
+    ],
+    "explanation_ro": "When you collect a coin, the score usually goes up (the points or the number of coins). The program keeps this number in a variable called, for example, “score” and adds 1 (or more) to it every time the character touches a coin."
+  },
+  {
+    "id": "DATA-W2",
+    "domain": "data",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A variable is like a box with a label (its name) and something inside (its value). Give an example of a variable from a game: what would it be called, and what value could it have?",
+    "reference_answer_ro": "For example: lives = 3, score = 0, speed = 10, level = 1, playerName = “Alex”.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only a name or only a value, without the other part.",
+      "2": "A suitable name and a suitable value.",
+      "3": "A suitable name and value, plus when or how the value changes in the game."
+    },
+    "misconceptions": [
+      {
+        "tag": "variable_is_value",
+        "description": "Confuses the name of the variable with its value."
+      },
+      {
+        "tag": "variable_never_changes",
+        "description": "Thinks a variable always keeps the same value."
+      }
+    ],
+    "explanation_ro": "One example is the variable “lives” with the value 3. The name stays the same, but the value can change: when the character is hit, lives becomes 2. This is how games remember the score, the speed, the level or the player’s name."
+  },
+  {
+    "id": "DATA-E1",
+    "domain": "data",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is the variable “lives” used for in a game, and when does its value change?",
+    "reference_answer_ro": "It remembers how many lives the player has left. It goes down when the character is hit or touches an enemy or a trap, it can go up when the player collects a bonus, and when it reaches 0 the game ends (Game Over).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says only what it is used for, or only when it changes.",
+      "2": "What it is used for and at least one moment when it changes (for example it goes down when you are hit).",
+      "3": "The level-2 answer, and what happens when it reaches 0 (Game Over)."
+    },
+    "misconceptions": [
+      {
+        "tag": "lives_equals_score",
+        "description": "Confuses lives with the score."
+      },
+      {
+        "tag": "lives_change_alone",
+        "description": "Thinks the value changes by itself, without code."
+      }
+    ],
+    "explanation_ro": "The variable “lives” remembers how many more mistakes the player can make. The code subtracts 1 from it when the character is hit and sometimes adds 1 for a bonus. When lives reaches 0, a rule “if lives = 0, then Game Over” ends the game."
+  },
+  {
+    "id": "DATA-E2",
+    "domain": "data",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is the difference between a variable and a list? Give an example of a list.",
+    "reference_answer_ro": "A variable holds a single value (for example score = 5). A list holds several values, in order (for example the questions in a quiz, the predictions in a Magic 8 Ball, the players’ names, a shopping list).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only an example of a list, without the difference, or a vague difference.",
+      "2": "Says that a variable holds one value and a list holds several.",
+      "3": "The correct difference and a suitable example of a list."
+    },
+    "misconceptions": [
+      {
+        "tag": "list_is_long_variable",
+        "description": "Thinks a list is just a variable with a longer name."
+      },
+      {
+        "tag": "list_unordered",
+        "description": "Does not know that the items of a list have positions (an order)."
+      }
+    ],
+    "explanation_ro": "A variable is a box with a single thing inside. A list is like a shelf with several numbered boxes: position 1, 2, 3… For example, a quiz keeps all its questions in a list and takes them one by one, by position."
+  },
+  {
+    "id": "DATA-E3",
+    "domain": "data",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Why is it better to use a variable “speed” than to write the number 10 in every place in the code where the character moves?",
+    "reference_answer_ro": "If you want a different speed, you change it in one place, not everywhere. You can also change the speed during the game (for example make it go up at every level). You make fewer mistakes, and the code is easier to understand.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says it is “easier” or “better”, without a reason.",
+      "2": "One correct reason: you change the value in one place, or you can change it during the game.",
+      "3": "Two correct reasons, or one reason with a clear example."
+    },
+    "misconceptions": [
+      {
+        "tag": "variable_slower",
+        "description": "Thinks the variable makes the program slower or more complicated, with no benefit."
+      },
+      {
+        "tag": "numbers_same_as_variable",
+        "description": "Thinks a number written directly is just as easy to change across the whole program."
+      }
+    ],
+    "explanation_ro": "With a variable “speed”, the value lives in one place. If you want the game to be harder, you change one number and all the movements change. You can even raise the speed during the game, at every level. With the number 10 written everywhere, you would have to find it and change it in every place."
+  },
+  {
+    "id": "DATA-E4",
+    "domain": "data",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A program has to remember the player’s name and age. What kind of value is the name, and what kind of value is the age?",
+    "reference_answer_ro": "The name is text (a string of characters, a string); the age is a number (an integer, int). The difference matters: you can do calculations with numbers, but not with text.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Correct for only one of them.",
+      "2": "The name is text (letters, a word, a string) and the age is a number.",
+      "3": "Both correct, and a reason why it matters (for example you can add ages but not names) or the terms string/int."
+    },
+    "misconceptions": [
+      {
+        "tag": "everything_is_text",
+        "description": "Thinks everything in a computer is text, so the type does not matter."
+      },
+      {
+        "tag": "age_is_text",
+        "description": "Thinks the age is stored the same way as a word."
+      }
+    ],
+    "explanation_ro": "The name is text (in programming it is called a “string of characters”, or string), and the age is a number (an integer). The type matters: with numbers you can do calculations, for example “age in 5 years = age + 5”. With text you cannot do calculations, but you can join words together."
+  },
+  {
+    "id": "DATA-E5",
+    "domain": "data",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In a game, the food or a coin has to appear in a different place every time. What would you use so that the place is different each time?",
+    "reference_answer_ro": "A random number: for example “go to a random position”, or x = a random number between -200 and 200 and y = a random number between some limits, so that the object stays on the screen.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says to move it “by hand” or something vague (“somewhere else”), without the idea of chance.",
+      "2": "The idea of a random value, “by chance”.",
+      "3": "Random values for the position (X and Y), and care that it stays on the screen (within some limits)."
+    },
+    "misconceptions": [
+      {
+        "tag": "random_means_chaos",
+        "description": "Thinks “random” can put the object anywhere, even off the screen."
+      },
+      {
+        "tag": "manual_positions",
+        "description": "Thinks all the possible positions have to be written by hand."
+      }
+    ],
+    "explanation_ro": "We use a random number. The program picks a number from a range by itself, every time, for example X between -200 and 200. That way the coin always appears in a different place, but still on the screen, because we chose the limits."
+  },
+  {
+    "id": "DATA-H1",
+    "domain": "data",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "The score starts at 0. The program repeats 3 times: “add 5 to score”. After the loop: “subtract 2 from score”. What is the score at the end? Explain briefly.",
+    "reference_answer_ro": "13. After the loop the score is 0 + 5 + 5 + 5 = 15, then 15 − 2 = 13.",
+    "rubric": {
+      "0": "Missing answer, or a wrong result without any explanation.",
+      "1": "A wrong result, but with a partly correct idea (for example 15, forgetting the subtraction, or 9, subtracting 2 at every repeat).",
+      "2": "The correct result: 13.",
+      "3": "13 and the explanation of the steps (15 after the loop, then minus 2)."
+    },
+    "misconceptions": [
+      {
+        "tag": "subtract_inside_loop",
+        "description": "Subtracts 2 at every repeat, although the subtraction comes after the loop (result 9)."
+      },
+      {
+        "tag": "loop_once",
+        "description": "Runs the loop only once (result 3)."
+      }
+    ],
+    "explanation_ro": "The loop adds 5 three times: 0 → 5 → 10 → 15. Only after the loop has finished are 2 subtracted, so 15 − 2 = 13. When you follow a program, it helps to write down the value of the variable after each step."
+  },
+  {
+    "id": "DATA-H2",
+    "domain": "data",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In a game, the score does not start at 0 for each new game, but where it was left last time. What did you forget to do, and where in the code?",
+    "reference_answer_ro": "You forgot to set (reset) the score to 0 at the start of the game: for example “when the green flag is clicked → set score to 0”, or when the game starts or the player joins.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says there is a problem with the score, without a fix, or only proposes changing the score at the end.",
+      "2": "Says that the score has to be set (reset) to 0.",
+      "3": "Sets the score to 0 and says where: at the start of the game (in the start event)."
+    },
+    "misconceptions": [
+      {
+        "tag": "variables_reset_alone",
+        "description": "Thinks variables set themselves to 0 every time the game starts."
+      },
+      {
+        "tag": "reset_at_end",
+        "description": "Puts the reset only at the end, where it can be skipped if the game is stopped."
+      }
+    ],
+    "explanation_ro": "Variables keep their value until you change it. That is why the first thing at the start of the game (for example “when the green flag is clicked”) has to be “set score to 0”. You do the same with lives, time or speed."
+  },
+  {
+    "id": "DATA-H3",
+    "domain": "data",
+    "tier": "hard",
+    "bands": [
+      "upper"
+    ],
+    "prompt_ro": "The variable x has the value 5. The program does, in order: x = x + 1, then x = x * 2. What is x at the end?",
+    "reference_answer_ro": "12. First x becomes 5 + 1 = 6, then 6 * 2 = 12. The = sign means “put the value on the right into x”, not “is equal to” as in maths.",
+    "rubric": {
+      "0": "Missing answer, a wrong result without explanation, or says that x = x + 1 is impossible.",
+      "1": "A wrong result, but with a partly good idea (for example 11, doing the multiplication before the addition, or 6, forgetting the second step).",
+      "2": "12.",
+      "3": "12 and the explanation of the steps (6, then 12) or of the = sign."
+    },
+    "misconceptions": [
+      {
+        "tag": "equals_is_math",
+        "description": "Reads “x = x + 1” as a maths equation, which cannot be true."
+      },
+      {
+        "tag": "order_ignored",
+        "description": "Does the operations in a different order from the program."
+      }
+    ],
+    "explanation_ro": "In programming, “x = x + 1” means: take the value of x, add 1, and put the result back into x. So x becomes 6. Then “x = x * 2” makes it 6 × 2 = 12. Here the = sign is an assignment (“put into”), not an equality as in maths."
+  },
+  {
+    "id": "DATA-H4",
+    "domain": "data",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A quiz has a list of 5 questions. After the last question, the program tries to show question number 6 and an error appears. Why does the error appear, and how do you fix it?",
+    "reference_answer_ro": "The list has only 5 items, so position 6 does not exist. (In Python positions start at 0, so the last one is 4, but the idea is the same.) Before moving to the next question, you check: if the question number is greater than the length of the list, you stop the quiz (show “Done!” and the score) or go back to the first question.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says “the list has ended” or that it is a mistake, without a clear fix; or gives a fix without an explanation.",
+      "2": "Explains that question 6 does not exist in the list (the list has only 5 items).",
+      "3": "Explains, and proposes a check before showing the question (if the number is past the length of the list, end the quiz or go back to the start)."
+    },
+    "misconceptions": [
+      {
+        "tag": "list_infinite",
+        "description": "Thinks a list carries on by itself after its last item."
+      },
+      {
+        "tag": "add_empty_item",
+        "description": "Only proposes adding an empty question, without a check."
+      }
+    ],
+    "explanation_ro": "A list with 5 items has only 5 positions; position 6 does not exist, which is why the error appears. Before showing the next question, you check: “if the question number > the length of the list, then show «Done!» and the score”. That way the program knows when the quiz is over."
+  },
+  {
+    "id": "DATA-H5",
+    "domain": "data",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In a photo app, the variable photoNumber shows which box the photo appears in (1, 2, 3 or 4) and goes up by 1 after each photo. After the fourth photo it has to go back to 1. What rule do you add?",
+    "reference_answer_ro": "After increasing photoNumber by 1: if photoNumber > 4 (that is, it has reached 5), then set photoNumber to 1. That way the values go 1, 2, 3, 4, 1, 2…",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says “it has to go back to 1” without a condition, or gives a condition without an action.",
+      "2": "The condition (photoNumber > 4 or photoNumber = 5) and the action (set to 1).",
+      "3": "The level-2 answer, and where the rule goes (after the increase), or shows the sequence 1, 2, 3, 4, 1…"
+    },
+    "misconceptions": [
+      {
+        "tag": "reset_always",
+        "description": "Sets it to 1 after every photo, without a condition."
+      },
+      {
+        "tag": "boundary_off",
+        "description": "Uses the condition “= 4” and resets too early, so the fourth box is never used."
+      }
+    ],
+    "explanation_ro": "After photoNumber goes up, you check: “if photoNumber > 4, then set photoNumber to 1”. That way the variable goes 1, 2, 3, 4 and then 1 again. Watch the limit: if you write “= 4”, the fourth box never gets a photo."
+  },
+  {
+    "id": "WRLD-W1",
+    "domain": "worlds",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Describe a game or a 3D world that you have built or would like to build. What does the player do there?",
+    "reference_answer_ro": "Any game or world, with a description of what the player does. For example: an obby where you jump over traps to reach the end; a maze where you collect keys; a world in CoSpaces where you talk to characters.",
+    "rubric": {
+      "0": "Missing answer, or unrelated to games or virtual worlds.",
+      "1": "Only the name of an existing game, with nothing about what the player does.",
+      "2": "A game or a world and what the player does there.",
+      "3": "A game or world, what the player does, and a goal or a rule (how you win or how you lose)."
+    },
+    "misconceptions": [
+      {
+        "tag": "no_goal",
+        "description": "Describes only the scenery, not what the player does."
+      },
+      {
+        "tag": "only_title",
+        "description": "Gives only the name of a well-known game."
+      }
+    ],
+    "explanation_ro": "Every good game has three things: a character, something to do (jump, collect coins, run from enemies) and a rule for winning or losing. When you plan a game, write these three things down on paper first. That makes it much easier to program, even with the help of AI."
+  },
+  {
+    "id": "WRLD-W2",
+    "domain": "worlds",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In many 2D games, a character has several pictures called “costumes” (for example with the left foot forward, then with the right foot). Why do we switch the costumes quickly, one after another?",
+    "reference_answer_ro": "So that the character seems to move (walk, run, fly). It is an animation, like in cartoons or a flip-book.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “so it looks different” or “so it looks nice”, without the idea of movement.",
+      "2": "So that it seems to move (animation).",
+      "3": "Animation and a detail (for example a short pause between costumes, or repeating them in a loop)."
+    },
+    "misconceptions": [
+      {
+        "tag": "costume_is_new_sprite",
+        "description": "Thinks each costume is a different character."
+      },
+      {
+        "tag": "costumes_for_decor_only",
+        "description": "Thinks costumes are only for looks, not for animation."
+      }
+    ],
+    "explanation_ro": "When pictures change quickly one after another, our eyes see movement. Cartoons work the same way. In code you usually put “next costume” and a short pause (“wait 0.1 seconds”) inside a loop, so the character seems to walk."
+  },
+  {
+    "id": "WRLD-E1",
+    "domain": "worlds",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In a 3D world (for example in CoSpaces, Roblox or Blender), the position of an object is given by three numbers: X, Y and Z. Why are there three, not two as in a 2D game?",
+    "reference_answer_ro": "Because a 3D world has three directions: left–right, front–back (depth) and up–down (height). A 2D game has only two. (Which letter means “up” differs from one program to another.)",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “because it is 3D”, without saying what the third direction adds.",
+      "2": "Says that the third coordinate adds depth or height (one more direction).",
+      "3": "Names all three directions (left–right, front–back, up–down)."
+    },
+    "misconceptions": [
+      {
+        "tag": "z_is_size",
+        "description": "Thinks the third number is the size of the object."
+      },
+      {
+        "tag": "z_is_rotation",
+        "description": "Thinks the third number is the rotation of the object."
+      }
+    ],
+    "explanation_ro": "In a 2D game you need only two numbers: how far left or right, and how far up or down. In a 3D world there is one more direction: front–back (depth). That is why the position has three numbers. In some programs Z means “up”, in others Y, but there are always three directions."
+  },
+  {
+    "id": "WRLD-E2",
+    "domain": "worlds",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is a “clone” in a game (for example in Scratch), and what is it useful for?",
+    "reference_answer_ro": "A copy of a character or object, created by the program while the game is running. It is useful when you need many identical objects (enemies, bullets, falling stars, the snake’s tail) without drawing and programming each one by hand.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “a copy” or only “for lots of enemies”.",
+      "2": "A copy created by the program and one use (many identical objects).",
+      "3": "The level-2 answer and a detail: the clone has its own code (“when I start as a clone”) or has to be deleted when it is no longer needed."
+    },
+    "misconceptions": [
+      {
+        "tag": "clone_is_editor_copy",
+        "description": "Thinks a clone is the same as duplicating the character by hand in the editor."
+      },
+      {
+        "tag": "clones_identical_behaviour",
+        "description": "Thinks all clones have to stay in the same place and do exactly the same thing."
+      }
+    ],
+    "explanation_ro": "A clone is a copy of a character made by the program while the game is running. With clones you can have dozens of enemies or bullets from a single character. Each clone can get its own code (in Scratch: “when I start as a clone”), and it is good to delete it when it is no longer needed."
+  },
+  {
+    "id": "WRLD-E3",
+    "domain": "worlds",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In an obstacle game (obby) or a platform game, what is a checkpoint (save point) for?",
+    "reference_answer_ro": "When the character falls or “dies”, it reappears (respawns) at the last checkpoint it reached, not at the start of the course. That makes the game less frustrating, and the player keeps their progress.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A vague answer (“it helps you”), without the idea of reappearing.",
+      "2": "Says that you reappear there, not at the start.",
+      "3": "Reappearing at the checkpoint and why it is useful (you do not start over, you keep your progress, the game is less frustrating)."
+    },
+    "misconceptions": [
+      {
+        "tag": "checkpoint_is_finish",
+        "description": "Thinks the checkpoint is the end of the game."
+      },
+      {
+        "tag": "checkpoint_gives_points",
+        "description": "Thinks the checkpoint only gives points."
+      }
+    ],
+    "explanation_ro": "A checkpoint saves how far you have got. If the character falls, it respawns there, not at the start. Without checkpoints, a long course would be very frustrating, because you would start everything again after every mistake."
+  },
+  {
+    "id": "WRLD-E4",
+    "domain": "worlds",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A robot or a phone can “sense” what is around it using sensors. Give an example of a sensor and say what it can detect.",
+    "reference_answer_ro": "Distance sensor (ultrasonic) → obstacles; light sensor → how bright it is; line or colour sensor → a line on the floor; accelerometer → when the phone is shaken or tilted; GPS → the location; camera → images; microphone → sounds.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Names a sensor without saying what it detects, or what it detects without the sensor.",
+      "2": "A sensor and what it detects.",
+      "3": "A sensor, what it detects, and how a program uses it (for example “if the obstacle is close, the robot stops”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "sensor_is_motor",
+        "description": "Confuses a sensor with a motor (something that performs an action)."
+      },
+      {
+        "tag": "robot_knows_without_sensor",
+        "description": "Thinks the robot knows what is around it without sensors."
+      }
+    ],
+    "explanation_ro": "Sensors are the “senses” of a robot or a phone. A distance sensor detects obstacles, an accelerometer feels when the phone is shaken, and a light sensor measures light. The program reads the sensor’s value and decides what to do, for example: “if the obstacle is close, stop the motors”."
+  },
+  {
+    "id": "WRLD-E5",
+    "domain": "worlds",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A 3D printer does not print on paper. How does it build an object?",
+    "reference_answer_ro": "It melts plastic (filament) and lays it down layer by layer, from the bottom up, following a 3D model made on the computer (for example an .stl file), until the object is formed.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A vague answer (“it prints it”, “with plastic”), without saying how.",
+      "2": "The idea of layers (it builds layer by layer) or melted plastic laid down following a 3D model.",
+      "3": "Both ideas (layers and melted plastic) and the fact that it starts from a 3D model on the computer."
+    },
+    "misconceptions": [
+      {
+        "tag": "printer_cuts",
+        "description": "Thinks the 3D printer cuts the object out of a block of material."
+      },
+      {
+        "tag": "printer_copies_anything",
+        "description": "Thinks the printer can copy any object without a 3D model."
+      }
+    ],
+    "explanation_ro": "A 3D printer gets a 3D model from the computer (for example an .stl file). Then it melts a thread of plastic (filament) and lays it down layer on layer, very thin, from the bottom up. The layers stick together and, at the end, the object is ready."
+  },
+  {
+    "id": "WRLD-H1",
+    "domain": "worlds",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "You built a platform in the air in a 3D game. When you start the game, the platform falls down. Why does this happen, and what do you change so that it stays in the air?",
+    "reference_answer_ro": "The platform has physics (gravity) switched on, so it falls like a real object. It has to be fixed in place: in Roblox you tick Anchored, in CoSpaces you switch off its physics or make it static.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “because of gravity”, without a fix, or a fix that makes no sense (for example “I put it higher”).",
+      "2": "Gravity or physics pulls it down, and the platform has to be fixed (anchored, without physics).",
+      "3": "The level-2 answer and the name of the actual property (Anchored, physics off, static object)."
+    },
+    "misconceptions": [
+      {
+        "tag": "put_higher",
+        "description": "Thinks that if it is placed higher, it will not fall."
+      },
+      {
+        "tag": "game_glitch",
+        "description": "Thinks it is a bug in the game, not a property of the object."
+      }
+    ],
+    "explanation_ro": "In 3D worlds with physics, objects fall as in real life, because of gravity. A platform that should float has to be fixed in place: in Roblox you tick the Anchored property, and in CoSpaces you switch off its physics. Then it stays exactly where you put it."
+  },
+  {
+    "id": "WRLD-H2",
+    "domain": "worlds",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Your character walks through a wall instead of stopping at it. What could be missing, and how do you fix it?",
+    "reference_answer_ro": "The wall does not have collision switched on (for example CanCollide is off in Roblox, or the wall has no physics), or, in Scratch, the code that checks for touching is missing: “if touching the wall, move back”. The fix: switch on collision or add the touch check.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Vaguely says “there is a problem with the wall”, without saying what.",
+      "2": "Identifies the missing collision or the missing touch check.",
+      "3": "Identifies the problem and proposes the concrete fix (switch on collision/CanCollide, or “if touching the wall, move back”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "walls_solid_by_default",
+        "description": "Thinks any wall that is drawn is automatically solid."
+      },
+      {
+        "tag": "make_wall_thicker",
+        "description": "Thinks a thicker wall solves the problem."
+      }
+    ],
+    "explanation_ro": "A wall looks solid, but the program has to know that it is solid. In 3D worlds this is a property (collision, for example CanCollide in Roblox). In Scratch, you write the rule: “if touching the wall, move back a few steps”. Without one of them, the character walks through the wall as if it were air."
+  },
+  {
+    "id": "WRLD-H3",
+    "domain": "worlds",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A cube is at position X = 0, Y = 5, Z = 0. A loop repeats 4 times and, each time, adds 3 to X. Where is the cube at the end?",
+    "reference_answer_ro": "At X = 12, Y = 5, Z = 0. Only X changed: 0 + 3 + 3 + 3 + 3 = 12; Y and Z stayed the same.",
+    "rubric": {
+      "0": "Missing answer, or a wrong result without any explanation.",
+      "1": "A partial result: X wrong but with a good idea (for example 9 or 15), or also changes Y or Z.",
+      "2": "X = 12 (without changing Y and Z).",
+      "3": "The full position (12, 5, 0) and the explanation that only X changed."
+    },
+    "misconceptions": [
+      {
+        "tag": "add_to_all_axes",
+        "description": "Adds 3 to all the coordinates, not only to X."
+      },
+      {
+        "tag": "count_wrong",
+        "description": "Counts the repeats wrongly or multiplies wrongly."
+      }
+    ],
+    "explanation_ro": "At each repeat, X goes up by 3: 0 → 3 → 6 → 9 → 12. Y and Z are not changed by the code, so they stay 5 and 0. The final position is (12, 5, 0): the cube moved in only one direction."
+  },
+  {
+    "id": "WRLD-H4",
+    "domain": "worlds",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In Snake, the tail is made of clones of the head: at each step a new clone appears, which is deleted after a few seconds. What happens to the tail if the clones live longer? Why?",
+    "reference_answer_ro": "The tail gets longer, because the old clones are deleted later, so there are more clones on the screen at the same time. This is how the snake grows when it eats: the clones’ lifetime goes up.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says that something about the tail changes, but not that it gets longer.",
+      "2": "The tail gets longer.",
+      "3": "Longer, with the explanation: there are more clones at the same time, because they are deleted later."
+    },
+    "misconceptions": [
+      {
+        "tag": "clone_life_is_speed",
+        "description": "Thinks the clone’s lifetime changes the snake’s speed."
+      },
+      {
+        "tag": "tail_shorter",
+        "description": "Thinks the tail gets shorter."
+      }
+    ],
+    "explanation_ro": "The head leaves a clone behind at every step. If each clone stays longer before it is deleted, there are more clones on the screen at the same time, so the tail is longer. That is why, in Snake, the clones’ lifetime is increased when the snake eats."
+  },
+  {
+    "id": "WRLD-H5",
+    "domain": "worlds",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "You want a trap to take away a life only when the player touches it, not when a ball or another object touches it. What does the code have to check?",
+    "reference_answer_ro": "The code has to check who touched the trap: if the object that touches it is part of the player’s character (in Roblox, it has a Humanoid; in Scratch, “if touching Character”), then take away a life; otherwise do nothing.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says “it has to check the touch”, without telling the player apart from other objects.",
+      "2": "Checks whether the one touching is the player (the character), not just any object.",
+      "3": "The level-2 answer and how the player is recognised (Humanoid in Roblox, the character’s name in Scratch), or what happens otherwise."
+    },
+    "misconceptions": [
+      {
+        "tag": "touch_is_player",
+        "description": "Thinks any touch automatically comes from the player."
+      },
+      {
+        "tag": "remove_ball",
+        "description": "Proposes removing the ball from the game instead of checking who touches."
+      }
+    ],
+    "explanation_ro": "The “touched” event fires for any touch: the player, a ball, another object. That is why the code checks who touched: in Scratch “if touching Character”, and in Roblox it checks whether the object is part of a character that has a Humanoid. Only then is a life taken away."
+  },
+  {
+    "id": "WEB-W1",
+    "domain": "web",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Think of a website you know (for example YouTube). What do you usually find at the top of the page?",
+    "reference_answer_ro": "The logo, the menu, the search bar, the account or sign-in button. The top part is called the header.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A very vague answer (“stuff”, “the top”).",
+      "2": "At least one suitable element (logo, menu, search, account button).",
+      "3": "Two or more suitable elements, or names the part “header”."
+    },
+    "misconceptions": [
+      {
+        "tag": "no_structure",
+        "description": "Thinks pages have no usual structure (top, middle, bottom)."
+      },
+      {
+        "tag": "header_is_title_only",
+        "description": "Thinks the top is only a title."
+      }
+    ],
+    "explanation_ro": "At the top of almost any website you find the header: the logo, the menu, the search bar and the account button. In the middle is the content (body), and at the bottom the footer, with contact details and useful links. This structure helps you quickly find what you are looking for on any site."
+  },
+  {
+    "id": "WEB-W2",
+    "domain": "web",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Name an app on a phone or a computer and a button in it. What happens when you press the button?",
+    "reference_answer_ro": "Any real app and button, with what they do. For example: YouTube – the Play button starts the video; Camera – the round button takes a photo.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only the name of the app, without a button or without what the button does.",
+      "2": "An app, a button and what the button does.",
+      "3": "The level-2 answer and the remark that pressing it starts some code (an event), or a second example."
+    },
+    "misconceptions": [
+      {
+        "tag": "button_is_decoration",
+        "description": "Thinks buttons are just pictures."
+      },
+      {
+        "tag": "app_does_it_alone",
+        "description": "Thinks the app does things without anyone having programmed what each button does."
+      }
+    ],
+    "explanation_ro": "Every button in an app has code attached to it: “when the button is pressed, do something”. For example, in the Camera app the round button takes a photo, and in a game the “Start” button starts the game. Buttons are programmed this way in App Inventor, in React Native and on websites."
+  },
+  {
+    "id": "WEB-E1",
+    "domain": "web",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A website is usually made with HTML and CSS. What does HTML do, and what does CSS do? (If you have not made websites, try from what you know.)",
+    "reference_answer_ro": "HTML builds the structure and content of the page (headings, paragraphs, images, buttons, links). CSS decides how it looks (colours, fonts, sizes, layout). Like a house: HTML is the walls and rooms, CSS is the paint and the furniture.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Correct for only one of them.",
+      "2": "HTML = the structure or content; CSS = the look or style.",
+      "3": "Both correct, and an example or a comparison."
+    },
+    "misconceptions": [
+      {
+        "tag": "css_does_logic",
+        "description": "Thinks CSS does the logic or the calculations."
+      },
+      {
+        "tag": "html_css_same",
+        "description": "Thinks HTML and CSS do the same thing."
+      }
+    ],
+    "explanation_ro": "HTML says what is on the page: a heading, a paragraph, an image, a button. CSS says how these look: colour, size, font, where they are placed. The part that makes the page react (for example what a button does) is usually written in JavaScript."
+  },
+  {
+    "id": "WEB-E2",
+    "domain": "web",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is the difference between a website’s domain (for example www.yourname.com) and hosting?",
+    "reference_answer_ro": "The domain is the address of the site, which you type to get to it. Hosting is the place (the server) where the site’s files are kept: text, pictures, code. Like a house: hosting is the land the house stands on, the domain is the street address.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Correct for only one of them.",
+      "2": "Domain = the address; hosting = the place or server where the site lives.",
+      "3": "Both correct, and a comparison or an example."
+    },
+    "misconceptions": [
+      {
+        "tag": "domain_is_site",
+        "description": "Thinks the domain contains the site itself."
+      },
+      {
+        "tag": "hosting_is_browser",
+        "description": "Confuses hosting with the browser."
+      }
+    ],
+    "explanation_ro": "The domain (for example www.yourname.com) is the address: you give it to your friends so they can find you. Hosting is the computer (the server) where the site’s files live, switched on all the time. You need both: an address and a place for the house to stand."
+  },
+  {
+    "id": "WEB-E3",
+    "domain": "web",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What does it mean for a website to be “responsive”? (Think of the same site opened on a phone and on a computer.)",
+    "reference_answer_ro": "The site adapts automatically to the size of the screen: on a phone it rearranges itself (the menu folds up, the images get smaller, the columns go one under the other), so that it looks good and is easy to use on any screen.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A vague answer (“it works well”, “it is fast”), without the idea of different screens.",
+      "2": "It adapts to screens of different sizes.",
+      "3": "It adapts, and gives an example of what changes (the menu, the size of the images, the column layout)."
+    },
+    "misconceptions": [
+      {
+        "tag": "responsive_is_fast",
+        "description": "Thinks “responsive” means the site responds quickly."
+      },
+      {
+        "tag": "separate_sites",
+        "description": "Thinks a separate site has to be made for phones."
+      }
+    ],
+    "explanation_ro": "A “responsive” site changes its layout by itself to fit the screen. On a computer it may have three columns, and on a phone it puts them one under the other. The images get smaller, and the menu often hides behind a button with three lines. That way the site looks good everywhere."
+  },
+  {
+    "id": "WEB-E4",
+    "domain": "web",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "You are making a phone app where, when you press a button, the phone says “Hello!”. Which components do you need, and which event do you use?",
+    "reference_answer_ro": "A button (Button) and a component that speaks (TextToSpeech). The event: “when the button is pressed” (Button.Click) → call “speak” (Speak) with the text “Hello!”.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only the button, or only “I make it speak”, without the link between them.",
+      "2": "The button and the press event that starts the speech (or the sound).",
+      "3": "Button, press event and the speech component (TextToSpeech) with the text “Hello!”."
+    },
+    "misconceptions": [
+      {
+        "tag": "button_speaks_itself",
+        "description": "Thinks the button can speak by itself, without a sound or speech component."
+      },
+      {
+        "tag": "no_event",
+        "description": "Does not link the speech to an event; thinks it just happens."
+      }
+    ],
+    "explanation_ro": "You need two components: a button and one that turns text into speech (in App Inventor, TextToSpeech). Then you connect them with an event: “when the button is pressed, call speak with the text «Hello!»”. Without the event, the app does not know when to speak."
+  },
+  {
+    "id": "WEB-E5",
+    "domain": "web",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "On a website, a light bulb turns on when you press the ON button and turns off when you press OFF. Which part does this: HTML, CSS or JavaScript? Why?",
+    "reference_answer_ro": "JavaScript: it makes the page interactive, that is, it reacts to the click (onclick) and changes the picture of the bulb (for example with getElementById). HTML puts the buttons and the picture on the page, and CSS makes them look good.",
+    "rubric": {
+      "0": "Missing answer, or chooses HTML or CSS with no link to the click.",
+      "1": "Chooses HTML or CSS, but says that something is needed that reacts to the click.",
+      "2": "JavaScript.",
+      "3": "JavaScript and why (it reacts to the click and changes the picture)."
+    },
+    "misconceptions": [
+      {
+        "tag": "css_does_interaction",
+        "description": "Thinks CSS handles the interaction on click."
+      },
+      {
+        "tag": "html_does_everything",
+        "description": "Thinks HTML does everything that happens on the page by itself."
+      }
+    ],
+    "explanation_ro": "HTML puts the buttons and the bulb picture on the page, CSS makes them look good, but JavaScript brings them to life: “when ON is clicked, change the picture to the bulb that is on”. Whenever a page reacts to what you do, it is usually JavaScript."
+  },
+  {
+    "id": "WEB-H1",
+    "domain": "web",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "You wrote in the CSS file that the headings should be red, but nothing changes on the page. Give two possible reasons.",
+    "reference_answer_ro": "The CSS file is not linked to the HTML page (the <link> line is missing or the path to the file is wrong, for example css/style.css); the selector name is wrong (for example h2 instead of h1, or .title without the class in the HTML); a typing mistake (a missing ; or a brace); the file is not saved or the page is not reloaded.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "One vague reason (“there is a mistake in the code”).",
+      "2": "One concrete, plausible reason.",
+      "3": "Two concrete, plausible reasons."
+    },
+    "misconceptions": [
+      {
+        "tag": "css_applies_automatically",
+        "description": "Thinks the CSS applies by itself, without being linked to the page."
+      },
+      {
+        "tag": "browser_broken",
+        "description": "Thinks the problem is the browser or the computer."
+      }
+    ],
+    "explanation_ro": "Most often, the CSS file is not linked to the page: the HTML needs a <link> line with the correct path, for example css/style.css. Other causes: the selector does not match the element (h1 or h2), a brace or a semicolon is missing, or the page was not saved and reloaded. Check them one by one, like a detective."
+  },
+  {
+    "id": "WEB-H2",
+    "domain": "web",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "On a phone, an image on your website goes off the screen and you have to scroll sideways to see it. Why does this happen, and how do you fix it?",
+    "reference_answer_ro": "The image has a fixed width in pixels (for example 1200px), larger than the phone’s screen. The fix: make it relative to the screen, for example in CSS max-width: 100% (or a width in percent), so that it shrinks automatically on small screens.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only proposes a smaller fixed size, without the idea of adapting, or only says “it is too big”.",
+      "2": "The image has a fixed size larger than the screen and has to adapt to the screen width.",
+      "3": "The level-2 answer and the concrete fix (max-width: 100% or a width in percent)."
+    },
+    "misconceptions": [
+      {
+        "tag": "smaller_fixed_size",
+        "description": "Thinks a smaller fixed size is enough (on another screen the problem comes back)."
+      },
+      {
+        "tag": "phone_problem",
+        "description": "Thinks it is a problem with the phone, not with the site."
+      }
+    ],
+    "explanation_ro": "The image has a fixed width, larger than the phone’s screen, so it sticks out. The “responsive” solution is to make its size depend on the screen: in CSS, max-width: 100% means “never wider than the space it sits in”. That way it shrinks by itself on a phone and stays large on a computer."
+  },
+  {
+    "id": "WEB-H3",
+    "domain": "web",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A “Calculate” button should take the age from a text box, multiply it by 7 and show the “age in dog years”. You typed 10 and it shows 107. What happened?",
+    "reference_answer_ro": "The program joined the text “10” to “7” instead of multiplying: the value from the box is text, and the code used + (which, for text, means “join”) instead of ×. The fix: turn the text into a number (for example with Number or parseInt) and use * for multiplication. The correct result would be 70.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “it calculated wrongly” or “it should be 70”, without explaining.",
+      "2": "Notices that 10 and 7 were joined together as text, or that + was used instead of ×.",
+      "3": "Explains both (text instead of a number, and + instead of ×), or explains one and proposes the concrete fix."
+    },
+    "misconceptions": [
+      {
+        "tag": "computer_bad_math",
+        "description": "Thinks the computer “got the maths wrong”."
+      },
+      {
+        "tag": "input_is_number",
+        "description": "Thinks whatever you type into a box is automatically a number."
+      }
+    ],
+    "explanation_ro": "10 joined to 7 gives 107: the program treated the values as text and used +, which for text means “join”. What you type into a box is text, even if it looks like a number. It has to be turned into a number, and the * sign used for multiplication; then 10 × 7 = 70."
+  },
+  {
+    "id": "WEB-H4",
+    "domain": "web",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "In an app, a button should change the text on the screen from “On” to “Off”. The code changes a variable, but the text on the screen stays “On”. What is missing?",
+    "reference_answer_ro": "Changing the variable does not automatically change what you see. The component on the screen has to be updated too: in App Inventor “set Label.Text to Off”; in React Native you use state (useState) and its setter function, so that the screen is redrawn.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says there is a mistake with the button or the variable, without saying that the screen has to be updated.",
+      "2": "Says that the text on the screen (the label) has to be updated too, not only the variable.",
+      "3": "The level-2 answer and how: set the label’s Text, or use state (useState) so that the screen is redrawn."
+    },
+    "misconceptions": [
+      {
+        "tag": "variable_is_screen",
+        "description": "Thinks the variable and the text on the screen are the same thing."
+      },
+      {
+        "tag": "button_broken",
+        "description": "Thinks the button does not work."
+      }
+    ],
+    "explanation_ro": "A variable is a value in the program’s memory; the text on the screen is a separate component (a label). If you change only the variable, the screen does not find out. You also have to give the label the new text (in App Inventor: “set Label.Text”) or, in React Native, use state, which redraws the screen automatically."
+  },
+  {
+    "id": "WEB-H5",
+    "domain": "web",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A recipe app loses all the recipes you added when you close it and open it again. What is it missing?",
+    "reference_answer_ro": "Saving the data permanently. Right now the recipes live only in the app’s memory (variables, state), which is emptied when the app closes. They have to be saved in the phone’s storage (for example AsyncStorage) or in a database or on a server (for example MongoDB, Firebase), and loaded again at start-up.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Vaguely says “it does not work well” or “it has to be fixed”, without the idea of saving.",
+      "2": "Says that the data has to be saved somewhere (on the phone, in a database, in the cloud), not just kept in the app.",
+      "3": "The level-2 answer and the explanation that the app’s memory is emptied when it closes, or that the data has to be loaded again at start-up."
+    },
+    "misconceptions": [
+      {
+        "tag": "apps_remember_everything",
+        "description": "Thinks apps automatically remember everything."
+      },
+      {
+        "tag": "save_button_enough",
+        "description": "Thinks a “Save” button is enough, without a place where the data is kept."
+      }
+    ],
+    "explanation_ro": "An app’s variables and state live only while the app is open. For the recipes to stay, they have to be written to a permanent place: the phone’s storage (for example AsyncStorage) or a database in the cloud (Firebase, MongoDB). At start-up, the app reads them from there again."
+  },
+  {
+    "id": "AI-W1",
+    "domain": "ai",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Give an example of a place where you meet artificial intelligence in everyday life.",
+    "reference_answer_ro": "Recommendations on YouTube or TikTok, filters on Instagram or Snapchat, voice assistants (Siri, Alexa, Google), chatbots (ChatGPT, Gemini), Face ID, automatic translation, enemies in games, robot vacuum cleaners, self-driving cars.",
+    "rubric": {
+      "0": "Missing answer, or an example that does not use AI (for example a pocket calculator), without explanation.",
+      "1": "A very vague example (“on my phone”, “on the internet”).",
+      "2": "A concrete, plausible example.",
+      "3": "A concrete example and what the AI does there (for example “it chooses which videos to show me”)."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_is_robot",
+        "description": "Thinks AI means only metal robots."
+      },
+      {
+        "tag": "any_computer_is_ai",
+        "description": "Thinks every computer program is AI."
+      }
+    ],
+    "explanation_ro": "Artificial intelligence is everywhere: it chooses which videos YouTube and TikTok show you, finds your face for filters, unlocks your phone with Face ID and answers in chatbots like Gemini. AI is not only in robots: it is the invisible “brain” inside many apps."
+  },
+  {
+    "id": "AI-W2",
+    "domain": "ai",
+    "tier": "warmup",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "A chatbot (for example Gemini or ChatGPT) writes to you: “I’m so happy to help you!”. Is it really happy? How does it know to write like that?",
+    "reference_answer_ro": "It is not really happy: it has no feelings, it is a program. It learned from a huge amount of text written by people how to answer politely, and it imitates this way of speaking (like a very clever parrot).",
+    "rubric": {
+      "0": "Missing answer, or says that it is really happy, like a person.",
+      "1": "Says “I’m not sure” or only “maybe”, without any explanation.",
+      "2": "Says that it has no feelings (it is a program) or that it imitates the way people talk.",
+      "3": "Says that it has no feelings and explains that it learned from a lot of text written by people."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_has_feelings",
+        "description": "Thinks the chatbot feels emotions like a person."
+      },
+      {
+        "tag": "ai_is_person",
+        "description": "Thinks a person is writing behind the chatbot."
+      }
+    ],
+    "explanation_ro": "A chatbot has no feelings. It has “read” a huge amount of text written by people and learned how people usually answer, including politely. When it writes “I’m happy”, it imitates the way we talk, like an extremely clever parrot."
+  },
+  {
+    "id": "AI-E1",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "How can you tell that a picture might have been made with artificial intelligence? Give at least two clues.",
+    "reference_answer_ro": "Strange or wrong details (hands with too many fingers, text that makes no sense, shadows or reflections that do not match), a look that is too perfect or glossy, objects melting into each other. You can check where the picture comes from, or do a reverse image search.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only one valid clue, or very vague clues (for example “it looks weird”).",
+      "2": "At least two valid clues.",
+      "3": "At least two valid clues and a way to check (the source, a reverse image search) or an explanation of why these mistakes happen."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_always_obvious",
+        "description": "Thinks AI pictures can always be recognised easily and with certainty."
+      },
+      {
+        "tag": "quality_means_real",
+        "description": "Thinks a high-quality picture must be real."
+      }
+    ],
+    "explanation_ro": "Pictures made with AI often have small mistakes: hands with too many fingers, letters that do not form words, shadows that do not match. Sometimes they look too perfect. There is no 100% reliable method, so it is good to also check where the picture comes from, for example with a reverse image search."
+  },
+  {
+    "id": "AI-E2",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is the difference between an ordinary program (for example a pocket calculator) and a program with artificial intelligence?",
+    "reference_answer_ro": "An ordinary program follows exactly the rules written by the programmer and always does the same thing. A program with AI has learned from many examples (data) and can cope with new situations it has not seen before (for example it recognises a cat in a new photo).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says that AI is “smarter” or “newer”, without a reason.",
+      "2": "An ordinary program follows fixed rules, while AI learns from examples (data).",
+      "3": "The level-2 answer and an example (of an ordinary program and of AI)."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_never_wrong",
+        "description": "Thinks that AI, being “smart”, makes no mistakes."
+      },
+      {
+        "tag": "ai_has_rule_for_everything",
+        "description": "Thinks programmers wrote a rule into the AI for every situation."
+      }
+    ],
+    "explanation_ro": "A pocket calculator does exactly what the programmer told it: 2 + 2 always gives 4. A program with AI was trained on a huge number of examples, for example thousands of photos of cats, and learned the patterns by itself, so it recognises a new cat too. But because it learns from examples, it can also be wrong."
+  },
+  {
+    "id": "AI-E3",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What is a “prompt”, and how do you make it better, so that the AI gives you exactly what you want?",
+    "reference_answer_ro": "The prompt is the message (the instruction) you write to the AI. You make it better by making it clear and detailed: you say the role (who the AI should be), the context, the exact task and the format of the answer (the R.C.T.F. formula: Role, Context, Task, Format).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only what a prompt is, or only a vague tip (“write nicely”).",
+      "2": "What a prompt is and at least one good tip (more details, clearer, a role, a format).",
+      "3": "What a prompt is and several elements (for example Role, Context, Task, Format)."
+    },
+    "misconceptions": [
+      {
+        "tag": "polite_is_enough",
+        "description": "Thinks a prompt is good just because it is polite."
+      },
+      {
+        "tag": "short_is_best",
+        "description": "Thinks the shortest prompt gives the best result."
+      }
+    ],
+    "explanation_ro": "The prompt is the instruction you give the AI, in ordinary words. “I want a dog” gives a boring result. A good prompt says more: the Role (for example “you are an illustrator”), the Context, the exact Task and the Format (for example “as a poem” or “bright colours, sunset light”). The more precise you are, the closer the result is to what you imagine."
+  },
+  {
+    "id": "AI-E4",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Why is it not a good idea to believe everything a chatbot tells you, for example when you use it for homework?",
+    "reference_answer_ro": "It can be wrong, or it can make up things that sound certain but are not true (these are called “hallucinations”); its information can be out of date. That is why you check in other sources (the textbook, trusted websites, the teacher) and make sure you understand what you write.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “it’s not good” or “it’s cheating”, without the idea that it can be wrong.",
+      "2": "Says that the AI can be wrong or can make up information.",
+      "3": "It can be wrong or make things up, and how you check (other sources, the teacher, the textbook)."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_knows_everything",
+        "description": "Thinks the AI knows everything and is always right."
+      },
+      {
+        "tag": "confident_means_correct",
+        "description": "Thinks an answer given with confidence must be correct."
+      }
+    ],
+    "explanation_ro": "A chatbot can write wrong things very convincingly, as if it were sure. This is called a “hallucination”. That is why you check important information in other sources: the textbook, a trusted website or the teacher. AI is a good helper, but you decide what is correct."
+  },
+  {
+    "id": "AI-E5",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What does “computer vision” mean? Give an example of where it is used.",
+    "reference_answer_ro": "It is the part of AI that teaches the computer to understand pictures and video from a camera: to recognise faces, objects, handwritten digits. Examples: Face ID, filters that find your eyes, cars that recognise pedestrians, sorting waste from a photo.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only an example without an explanation, or a very vague explanation (“the computer sees”).",
+      "2": "AI that understands or recognises what is in pictures or video.",
+      "3": "The explanation and a suitable example."
+    },
+    "misconceptions": [
+      {
+        "tag": "camera_is_vision",
+        "description": "Thinks an ordinary camera, without AI, is computer vision."
+      },
+      {
+        "tag": "computer_sees_like_us",
+        "description": "Thinks a computer sees a picture as we do, not as a set of numbers (pixels)."
+      }
+    ],
+    "explanation_ro": "For a computer, a photo is just a table of numbers (pixels). Computer vision is the part of AI that learns to find shapes, faces or objects in these numbers. This is how Face ID, TikTok filters and cars that recognise pedestrians work."
+  },
+  {
+    "id": "AI-E6",
+    "domain": "ai",
+    "tier": "easy",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "What kind of information should you never type into a chatbot or an AI app? Give at least one example.",
+    "reference_answer_ro": "Personal data: your password, home address, phone number, national ID number, private photos, information about other people. What you type can be kept and seen by others.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "A vague answer (“secret things”), without a concrete example.",
+      "2": "At least one concrete type of personal data (password, address, phone number, ID number, private photos).",
+      "3": "Two or more examples and why (the data can be kept or seen by others)."
+    },
+    "misconceptions": [
+      {
+        "tag": "chat_is_private",
+        "description": "Thinks everything you type into a chatbot stays secret."
+      },
+      {
+        "tag": "only_passwords",
+        "description": "Thinks only the password is personal information."
+      }
+    ],
+    "explanation_ro": "Do not type personal data: passwords, your address, your phone number, your ID number, private photos or information about other people. What you type into an app can be kept on servers and, sometimes, seen by others. The simple rule: do not type anything into a chatbot that you would not tell a stranger."
+  },
+  {
+    "id": "AI-H1",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "An AI model learned to recognise cats only from photos of orange cats. What might happen when it sees a black cat? Why?",
+    "reference_answer_ro": "It might not recognise it (or might mistake it for something else), because it learned only from orange examples and may “think” that a cat means something orange. The solution: varied training data (cats of all colours, in many positions).",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says “it might get it wrong”, without a reason.",
+      "2": "It might not recognise it, because it has only seen orange cats.",
+      "3": "The level-2 answer and the solution: more varied examples in training."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_knows_cats_anyway",
+        "description": "Thinks the AI knows what a cat is anyway, whatever the examples."
+      },
+      {
+        "tag": "ai_learns_rules",
+        "description": "Thinks the AI was given rules by the programmer, rather than learning from examples."
+      }
+    ],
+    "explanation_ro": "An AI model learns only from the examples it sees. If all the cats were orange, the colour may become an important sign for it, so a black cat can confuse it. The solution is to train it with varied examples: cats of all colours, sizes and positions."
+  },
+  {
+    "id": "AI-H2",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "When we train an AI model, we keep part of the data aside and do not show it to the model during training. Why do we do this?",
+    "reference_answer_ro": "So that we can test it on new data it has never seen, and find out whether it really learned or only memorised. It is like a school test with new exercises, not the exact ones from the workbook.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Vaguely says “so it doesn’t get confused” or “to save data”, without the idea of testing.",
+      "2": "So that we can test it on data it has not seen.",
+      "3": "The level-2 answer and the idea that we check whether it learned or only memorised (or a comparison with a school test)."
+    },
+    "misconceptions": [
+      {
+        "tag": "save_data_for_later",
+        "description": "Thinks the data is kept only as a backup or so that there is not too much."
+      },
+      {
+        "tag": "test_on_training_ok",
+        "description": "Thinks you can test the model on the same data it learned from."
+      }
+    ],
+    "explanation_ro": "If you test the model on the same data it learned from, it is like setting a test with exactly the exercises you have already solved: you can get full marks just because you memorised them. The data kept aside (the test set) are new exercises, and they show whether the model really understood."
+  },
+  {
+    "id": "AI-H3",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "On days when many umbrellas are sold, there are also more car accidents. Does that mean umbrellas cause accidents? Explain.",
+    "reference_answer_ro": "No. Both are caused by something else: rain. When it rains, people buy umbrellas, and the roads are slippery and it is hard to see, so there are more accidents. The fact that two things go up together (correlation) does not mean that one causes the other.",
+    "rubric": {
+      "0": "Missing answer, or says that umbrellas cause the accidents.",
+      "1": "Says “no”, but without a reason or with an unrelated reason.",
+      "2": "Says no, and that rain is the common cause of both.",
+      "3": "The level-2 answer and the general rule: if two things happen together, it does not mean that one causes the other."
+    },
+    "misconceptions": [
+      {
+        "tag": "correlation_is_causation",
+        "description": "Thinks that if two things go up together, one causes the other."
+      },
+      {
+        "tag": "coincidence_only",
+        "description": "Thinks it is only a coincidence and does not look for a common cause."
+      }
+    ],
+    "explanation_ro": "Umbrellas and accidents both go up on rainy days: rain is the common cause. When two things happen together (this is called correlation), it does not automatically mean that one causes the other. When you analyse data, you or an AI, always ask yourself: “Could there be a third cause?”"
+  },
+  {
+    "id": "AI-H4",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "Your friend writes the prompt “Make me a picture of a dog” and the result is boring. Rewrite the prompt to make it much better.",
+    "reference_answer_ro": "A prompt with details about the role, context, task and format, for example: “You are a cartoon illustrator. In a park full of autumn leaves, a Corgi with a red scarf catches a frisbee in mid-air. 3D style like in animated films, warm colours, sunset light.”",
+    "rubric": {
+      "0": "Missing answer, or a prompt almost the same as the original.",
+      "1": "Adds a single detail (for example only the breed or the colour).",
+      "2": "Adds at least two clear details (for example what the dog is doing, where it is, the style).",
+      "3": "A rich prompt that covers several of: role, context (place, moment), action, style or format (colours, light, type of picture)."
+    },
+    "misconceptions": [
+      {
+        "tag": "longer_words_better",
+        "description": "Thinks a prompt is better just because it is longer, without useful details."
+      },
+      {
+        "tag": "ai_reads_mind",
+        "description": "Thinks the AI guesses by itself what the user is imagining."
+      }
+    ],
+    "explanation_ro": "The AI cannot read your mind: if you do not tell it which dog, where and in what style, it chooses something ordinary. A good prompt adds the role (“you are an illustrator”), the context (the place, the moment), what the dog is doing and the format (style, colours, light). The R.C.T.F. formula helps you not to forget anything."
+  },
+  {
+    "id": "AI-H5",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "lower",
+      "upper"
+    ],
+    "prompt_ro": "An AI made a video in which coffee pouring out of a cup turns into jelly. Why does the AI make mistakes like this?",
+    "reference_answer_ro": "The AI does not understand the laws of physics; it learned from many videos how pixels usually change and “guesses” the next frames. When the situation is hard (liquids, fire, wind), it guesses wrong (a hallucination). That is why we check what the AI produces.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Only says “the AI made a mistake” or “it’s an error”, without a reason.",
+      "2": "Says that the AI does not understand physics or the real world, but guesses from examples or patterns.",
+      "3": "The level-2 answer and the point that it learned from many examples and predicts the pixels or frames, or that the result has to be checked."
+    },
+    "misconceptions": [
+      {
+        "tag": "ai_bug_only",
+        "description": "Thinks it is just a program bug that can easily be fixed."
+      },
+      {
+        "tag": "ai_understands_physics",
+        "description": "Thinks the AI knows physics but chose to do it this way."
+      }
+    ],
+    "explanation_ro": "An AI that makes videos has not learned physics, as you do at school. It has seen many videos and learned how pixels usually change from one frame to the next, and then it guesses. For things that are hard to guess, like a flowing liquid, it guesses wrong. Mistakes like these are called “hallucinations”, which is why we always check what the AI makes."
+  },
+  {
+    "id": "AI-H6",
+    "domain": "ai",
+    "tier": "hard",
+    "bands": [
+      "upper"
+    ],
+    "prompt_ro": "An AI model that detects fake reviews gets 98% right on the training data, but only 55% on the test data. What happened?",
+    "reference_answer_ro": "The model memorised the training data instead of learning general rules (overfitting), so on new data it does little better than chance. What helps: more and more varied data, a simpler model, stopping training earlier.",
+    "rubric": {
+      "0": "Missing, wrong or unrelated answer.",
+      "1": "Says “the model is weak” or “the test data is hard”, without the idea of memorising.",
+      "2": "The model memorised the training data and does not cope with new data.",
+      "3": "The level-2 answer and the name of the problem (overfitting) or a solution (more and more varied data, a simpler model)."
+    },
+    "misconceptions": [
+      {
+        "tag": "test_data_wrong",
+        "description": "Thinks the problem is with the test data."
+      },
+      {
+        "tag": "more_training_fixes",
+        "description": "Thinks it only needs more training on the same data."
+      }
+    ],
+    "explanation_ro": "A very high score on the training data and a low one on new data means the model memorised the examples instead of learning the rule. This is called overfitting. It is like a pupil who learned the workbook answers by heart but cannot solve a new problem. More and more varied data, or a simpler model, helps."
+  }
+]
